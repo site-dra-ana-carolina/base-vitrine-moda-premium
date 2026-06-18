@@ -1,0 +1,343 @@
+Crie um site completo, responsivo e premium de loja online/vitrine para moda, servindo como base reutilizável para vender para lojistas. O site deve ter aparência de marca grande, inspirado na qualidade visual de marcas como Levi’s, Louis Vuitton, Zara, Nike, Prada, Dior e Gucci, mas sem copiar nenhuma delas literalmente.
+
+O objetivo é criar uma base de vitrine/e-commerce premium, moderna, editorial, comercial e fácil de adaptar para várias lojas de roupas, boutiques, moda feminina, moda masculina, streetwear, calçados e acessórios.
+
+Quero um site com padrão profissional, bonito, vendável e com visual forte. Não quero aparência genérica, amadora, vazia ou simples demais.
+
+NOME DA LOJA BASE:
+Atelier Store
+
+CONCEITO:
+Uma loja de moda premium e moderna, com vitrine online elegante, imagens grandes, categorias bem organizadas, produtos em destaque, página de produto e venda via WhatsApp.
+
+ESTILO VISUAL:
+- Layout premium, editorial e comercial.
+- Aparência de marca de moda real.
+- Mobile first.
+- Muito bem acabado visualmente.
+- Tipografia forte.
+- Espaçamentos elegantes.
+- Fotos grandes.
+- Grid de produtos bonito.
+- Header sofisticado.
+- Hero impactante.
+- Cards de produto com acabamento premium.
+- Botões com boa presença visual.
+- Paleta elegante e reutilizável.
+- Não usar layout genérico de SaaS.
+- Não usar visual infantil, colorido demais ou poluído.
+
+PALETA DE CORES:
+Use uma paleta premium neutra, fácil de adaptar:
+- Preto elegante: #111111
+- Off-white: #F7F3ED
+- Bege claro: #E9DED1
+- Marrom/dourado: #9A6A2F
+- Cinza texto: #6D6258
+- Branco quente: #FFFDF8
+
+A paleta deve transmitir moda, sofisticação, boutique e marca premium.
+
+TECNOLOGIA:
+- Next.js com App Router
+- React
+- TypeScript
+- Tailwind CSS
+- Componentes organizados
+- Código limpo e fácil de editar
+- Não usar backend
+- Não criar checkout real
+- Venda principal via WhatsApp
+
+ESTRUTURA DO PROJETO:
+Organize o site com componentes reutilizáveis:
+
+- app/page.tsx
+- app/layout.tsx
+- app/produto/[slug]/page.tsx
+- components/site-header.tsx
+- components/hero.tsx
+- components/categories.tsx
+- components/product-grid.tsx
+- components/product-card.tsx
+- components/product-detail.tsx
+- components/editorial.tsx
+- components/site-footer.tsx
+- lib/store.ts
+- app/globals.css
+
+ARQUIVO DE DADOS:
+Crie um arquivo central `lib/store.ts` com:
+- dados da marca
+- WhatsApp
+- Instagram
+- endereço
+- categorias
+- produtos
+- função de link para WhatsApp
+- função para buscar produto por slug
+- função para formatar preço
+
+A loja deve ser fácil de adaptar apenas trocando dados nesse arquivo.
+
+DADOS DA MARCA:
+Use estes dados fictícios base:
+
+Nome: Atelier Store
+Subtítulo: Moda premium para todos os dias
+WhatsApp: 5511999999999
+Instagram: https://instagram.com/atelierstore
+Instagram handle: @atelierstore
+Endereço: Rua da Moda, 100 - São Paulo/SP
+
+O WhatsApp deve abrir com mensagem pronta.
+
+CATEGORIAS:
+Crie categorias de moda:
+
+1. Novidades
+2. Vestidos
+3. Blusas
+4. Calças
+5. Acessórios
+6. Looks completos
+
+Cada categoria deve ter:
+- slug
+- nome
+- imagem
+- descrição curta
+
+PRODUTOS:
+Crie pelo menos 8 produtos fictícios com visual de moda premium:
+
+1. Vestido Midi Acetinado
+Categoria: Vestidos
+Preço: 289
+Cores: Preto, Champagne, Terracota
+Tamanhos: PP, P, M, G
+Descrição: vestido elegante com caimento fluido.
+
+2. Camisa Oversized Off White
+Categoria: Blusas
+Preço: 219
+Cores: Off-white, Preto, Areia
+Tamanhos: P, M, G, GG
+Descrição: camisa ampla e sofisticada para looks modernos.
+
+3. Calça Wide Leg Alfaiataria
+Categoria: Calças
+Preço: 349
+Cores: Preto, Bege, Marrom
+Tamanhos: 36, 38, 40, 42, 44
+Descrição: calça de alfaiataria com cintura alta e corte alongado.
+
+4. Blazer Estruturado Premium
+Categoria: Novidades
+Preço: 459
+Cores: Preto, Areia, Chocolate
+Tamanhos: P, M, G
+Descrição: blazer elegante para composições sofisticadas.
+
+5. Top Canelado Minimal
+Categoria: Blusas
+Preço: 139
+Cores: Preto, Branco, Marrom
+Tamanhos: PP, P, M, G
+Descrição: top versátil para sobreposições e looks casuais.
+
+6. Saia Curta Alfaiataria
+Categoria: Looks completos
+Preço: 199
+Cores: Preto, Bege, Caramelo
+Tamanhos: PP, P, M, G
+Descrição: saia moderna com acabamento refinado.
+
+7. Bolsa Mini Couro
+Categoria: Acessórios
+Preço: 299
+Cores: Preto, Caramelo, Off-white
+Tamanhos: Único
+Descrição: bolsa compacta para finalizar produções elegantes.
+
+8. Look Urbano Completo
+Categoria: Looks completos
+Preço: 599
+Cores: Preto, Off-white
+Tamanhos: P, M, G
+Descrição: combinação pronta com peças versáteis e modernas.
+
+Cada produto deve ter:
+- slug
+- name
+- category
+- price
+- image
+- gallery
+- colors
+- sizes
+- description
+- stylingTip
+
+Como não tenho imagens reais ainda, use imagens placeholder elegantes ou caminhos em `/images/`, mas deixe o código fácil para trocar depois.
+
+HEADER:
+Crie um header fixo, elegante e responsivo:
+- Logo/nome da loja no centro ou à esquerda.
+- Menu desktop: Novidades, Categorias, Coleção, Lookbook, Sobre.
+- Botão WhatsApp no desktop.
+- Menu hambúrguer no mobile.
+- Botão WhatsApp visível no mobile.
+- Header transparente sobre o hero e com fundo ao rolar.
+- Visual sofisticado e limpo.
+
+HERO:
+Crie uma seção hero forte e premium:
+- Imagem grande de fundo.
+- Overlay elegante.
+- Título grande:
+  "Moda que veste presença"
+- Subtítulo:
+  "Peças selecionadas para criar looks sofisticados, versáteis e atemporais."
+- Pequeno texto acima:
+  "Nova coleção"
+- Botões:
+  "Ver coleção"
+  "Falar no WhatsApp"
+- Hero deve ocupar quase a tela inteira.
+- No mobile, o texto deve ficar muito bonito e legível.
+
+CATEGORIAS:
+Crie seção de categorias com cards grandes:
+- Imagem
+- Nome da categoria
+- Descrição curta
+- Overlay elegante
+- Grid responsivo
+- Visual parecido com vitrine editorial de moda.
+
+COLEÇÃO / PRODUTOS:
+Crie seção "Coleção em destaque":
+- Título forte.
+- Texto curto explicativo.
+- Grid de produtos.
+- Mobile com 2 colunas.
+- Desktop com 4 colunas.
+- Cards com imagem vertical, etiqueta de categoria, nome, preço e botão.
+- Botão do produto: "Ver peça"
+- Card deve ter hover elegante.
+
+PÁGINA DE PRODUTO:
+Crie página dinâmica para cada produto:
+- Galeria de imagens.
+- Imagem principal grande.
+- Miniaturas clicáveis.
+- Nome do produto.
+- Categoria.
+- Preço formatado em BRL.
+- Descrição.
+- Dica de look.
+- Seleção de cor.
+- Seleção de tamanho.
+- Botão grande:
+  "Comprar pelo WhatsApp"
+- O botão deve abrir WhatsApp com mensagem pronta:
+  "Olá! Tenho interesse na peça [NOME DO PRODUTO]. Cor: [COR]. Tamanho: [TAMANHO]. Pode confirmar disponibilidade?"
+- Texto abaixo:
+  "Atendimento personalizado • Envio a combinar"
+- Link para voltar à coleção.
+
+LOOKBOOK / EDITORIAL:
+Crie uma seção editorial premium:
+- Título:
+  "Lookbook da temporada"
+- Texto:
+  "Combinações pensadas para transformar peças essenciais em produções marcantes."
+- Imagem grande ou composição visual.
+- Botão:
+  "Explorar looks"
+- Visual de campanha de moda.
+
+SOBRE A LOJA:
+Crie seção curta sobre a marca:
+- Título:
+  "Uma vitrine feita para marcas que querem vender melhor"
+- Texto falando sobre curadoria, estilo, atendimento e experiência.
+- Deve servir como base para qualquer loja.
+
+LOCALIZAÇÃO / ATENDIMENTO:
+Crie seção de atendimento:
+- WhatsApp
+- Instagram
+- Endereço
+- Horário fictício
+- Botão "Chamar no WhatsApp"
+- Botão "Ver no Instagram"
+
+FOOTER:
+Footer completo com:
+- Nome da marca
+- Descrição curta
+- Navegação
+- Categorias
+- Contato
+- Instagram
+- WhatsApp
+- Endereço
+- Direitos reservados
+
+SEO:
+Configure metadata:
+Title:
+"Atelier Store - Moda Premium Online"
+
+Description:
+"Vitrine online de moda premium com peças selecionadas, looks completos e atendimento pelo WhatsApp."
+
+Use lang="pt-BR".
+
+RESPONSIVIDADE:
+O site deve ficar impecável no celular:
+- Header não pode quebrar.
+- Hero precisa ser legível.
+- Grid de produtos deve ter 2 colunas no mobile.
+- Cards não podem ficar esmagados.
+- Botões devem ser fáceis de tocar.
+- Espaçamentos devem ser confortáveis.
+- Página de produto deve funcionar bem no mobile.
+
+QUALIDADE DO DESIGN:
+Capriche muito no visual.
+Não entregar algo básico.
+Não usar componentes crus.
+Não usar layout genérico.
+Não deixar com aparência de template gratuito.
+Quero um site que eu possa vender para lojistas como base profissional.
+
+DETALHES DE UI:
+- Use bordas arredondadas moderadas.
+- Use hover suave.
+- Use sombras discretas.
+- Use tracking em textos pequenos.
+- Use uppercase em títulos de moda quando combinar.
+- Use contraste forte nos CTAs.
+- Use imagens verticais nos produtos.
+- Use seções bem espaçadas.
+- Use botões elegantes, não botões padrão sem estilo.
+- Use visual refinado.
+
+IMPORTANTE:
+Não copie marcas famosas.
+Use apenas como inspiração de qualidade, composição e experiência.
+Crie uma identidade própria, premium e reutilizável.
+
+ENTREGUE:
+Um site completo funcionando com:
+- Home
+- Página de produto dinâmica
+- Dados centralizados
+- WhatsApp funcionando
+- Layout responsivo
+- Design premium
+- Código limpo
+- Fácil personalização para outras lojas

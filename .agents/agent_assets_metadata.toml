@@ -1,0 +1,62 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "4s_ZQre8U8liJQec8Im3w"
+uri = "file://attached_assets/images/hero.png"
+type = "image"
+title = "Hero background fashion editorial"
+
+[[generated]]
+id = "KAIo25CfS4xcsZIJkdRmy"
+uri = "file://attached_assets/images/cat-novidades.png"
+type = "image"
+title = "Category novidades editorial"
+
+[[generated]]
+id = "LO0tnIG5slzA_nNhFDpiW"
+uri = "file://attached_assets/images/cat-vestidos.png"
+type = "image"
+title = "Category vestidos editorial"
+
+[[generated]]
+id = "RdvFmfy1BE66xG3RrqUsE"
+uri = "file://attached_assets/images/cat-blusas.png"
+type = "image"
+title = "Category blusas editorial"
+
+[[generated]]
+id = "iOzKaKHzLVmgst0PdnM4G"
+uri = "file://attached_assets/images/cat-calcas.png"
+type = "image"
+title = "Category calcas editorial"
+
+[[generated]]
+id = "5gpDYc7QRp0kMEZPock0B"
+uri = "file://attached_assets/images/cat-acessorios.png"
+type = "image"
+title = "Category acessorios editorial"
+
+[[generated]]
+id = "bTRPovkeVi2ks6HqN_2rH"
+uri = "file://attached_assets/images/cat-looks.png"
+type = "image"
+title = "Category looks completos editorial"
+
+[[generated]]
+id = "YyHYRIVNR_nRCBZE7ADbn"
+uri = "file://attached_assets/images/prod-vestido.png"
+type = "image"
+title = "Product vestido acetinado"
+
+[[generated]]
+id = "aoaBUUDmFFOQgaYcteJTF"
+uri = "file://attached_assets/images/prod-camisa.png"
+type = "image"
+title = "Product camisa oversized"
+
+[[generated]]
+id = "e6DKehPPQ1Qyivvh3l7GK"
+uri = "file://attached_assets/images/prod-calca.png"
+type = "image"
+title = "Product calca wide leg"
